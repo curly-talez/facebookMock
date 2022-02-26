@@ -1,0 +1,64 @@
+<div class="signup_container">
+    <img src="../../assets/login_facebook.svg" alt="signup_facebook" class="signup_facebook-image">
+    <div class="signup_form-container">
+        <div class="signup_form-title-container">
+            <div class="signup_form-title">Create a new account</div>
+            <div class="signup_form-sub-title">It's quick and easy.</div>
+        </div>
+        <form [formGroup]="signupForm" (ngSubmit)="facebookSignup()" class="signup_form">
+            <div class="signup_input-container signup_fullname-container">
+                <input type="text" class="signup_input signup_fullname signup_first-name" placeholder="First name"
+                    formControlName="first_name">
+                <input type="text" class="signup_input signup_fullname" placeholder="Surname"
+                    formControlName="last_name">
+            </div>
+            <div class="signup_input-container">
+                <input type="email" class="signup_input" placeholder="Email address" formControlName="email_address">
+            </div>
+            <div class="signup_input-container">
+                <input type="password" class="signup_input" placeholder="New password" formControlName="password">
+            </div>
+            <!-- DOB -->
+            <label class="signup_dob">Date of birth</label>
+            <div class="signup_input-container signup_fullname-container">
+                <select name="day" id="day" class="signup_select" formControlName="day">
+                    <option *ngFor="let day of days" value="day"> {{day + 1}}</option>
+                </select>
+                <select name="month" id="month" class="signup_select" formControlName="month">
+                    <option *ngFor="let month of months" value="month"> {{month | date: 'MMM'}}</option>
+                </select>
+                <select name="year" id="year" class="signup_select" formControlName="year">
+                    <option *ngFor="let year of years" value="year"> {{year}}</option>
+                </select>
+            </div>
+            <!-- gender -->
+            <label class="signup_dob">Gender</label>
+            <div class="signup_input-container signup_fullname-container">
+                <div class="signup_gender">
+                    <label for="">Female</label>
+                    <input type="radio" name="gender" id="" formControlName="gender" value="female">
+                </div>
+                <div class="signup_gender">
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" id="" formControlName="gender" value="male">
+                </div>
+                <div class="signup_gender">
+                    <label for="">Custom</label>
+                    <input type="radio" name="gender" id="" formControlName="gender" value="custom">
+                </div>
+            </div>
+            <div class="signup_input-container signup_policy">
+                <p>By clicking Sign Up, you agree to our Terms, Data policy and cookie policy,
+                    you may recieve SMS notifications form us and can opt out at any time.
+                </p>
+            </div>
+            <div class="signup_input-container signup_btn_container">
+                <button type="submit" class="signup_btn">Submit</button>
+            </div>
+
+            <div class="signup_input-container signup_link">
+                <a href="" class="signup_link">Already have an account?</a>
+            </div>
+        </form>
+    </div>
+</div>

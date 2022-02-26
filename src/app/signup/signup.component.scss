@@ -1,0 +1,147 @@
+$signupColor: #606770;
+
+.signup {
+    
+    &_container {
+        display: flex;
+        margin:20px auto;
+        width: 400px;
+        flex-direction: column;
+    }
+
+    &_facebook-image {
+        width: 240px;
+        height: 100px;
+        margin: auto;
+    }
+
+    &_form-container{
+        max-width: 400px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    }
+
+    &_form-title-container {
+        text-align: center;
+        padding: 10px 16px;
+    }
+
+    &_form-title {
+        font-size: 25px;
+        line-height: 32px;
+        color: #1c1e21;
+        font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+    }
+
+    &_form-sub-title {
+        font-size: 15px;
+        line-height: 24px;
+        color: $signupColor;
+    }
+
+    &_form {
+        border-top: 1px solid #dadde1;
+        padding: 16px;
+    }
+
+    &_input-container {
+        width: 364px;
+        margin: 0  auto;
+        margin: 0 0 10px 0;
+    }
+
+    &_input {
+        border-radius: 6px;
+        font-size: 15px;
+        padding: 14px 16px;
+        width: 100%;
+        border: 1px solid #dddfe2;
+        line-height: 16px;
+        vertical-align: middle;
+        height: 40px;
+    }
+
+    &_fullname-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_fullname {
+        width: Calc(50% - 4px);
+    }
+
+    &_first-name {
+        margin-right: 8px;
+    }
+
+    &_dob {
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 20px;
+        color: $signupColor;
+    }
+
+    &_date {
+        width: 100px;
+        margin-right: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    &_select {
+        height: 40px;
+        width: 115px;
+        border-radius: 4px;
+        padding: 0 12px;
+        outline: none;
+        background-color: white;
+        border: 1px solid rgb(204, 208, 213);
+    }
+
+    &_gender {
+        width: 115px;
+        height: 40px;
+        border: 1px solid rgb(204, 208, 213);
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_policy {
+        color: #777;
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 12px;
+    }
+
+    &_btn {
+        outline: none;
+        background-color: #00a400;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        height: 36px;
+        padding: 0 32px;
+        margin: 10px auto 0;
+        width: 175px;
+
+        &_container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &_link {
+        padding: 10px 0;
+        text-align: center;
+        color: #1877f2;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+}
