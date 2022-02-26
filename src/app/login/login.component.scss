@@ -1,0 +1,76 @@
+
+.login {
+
+    &_container {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 10% auto;
+    }
+
+    &_facebook-image {
+        width: 240px;
+        height: 100px;
+        margin: auto;
+    }
+
+    &_form {
+        max-width: 400px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    }
+
+    &_form-title {
+        text-align: center;
+        padding: 24px 0 16px 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &_input-container {
+        width: 364px;
+        padding: 6px 0;
+        margin: 0  auto;
+    }
+
+    &_input {
+        border-radius: 6px;
+        font-size: 17px;
+        padding: 14px 16px;
+        width: 100%;
+        border: 1px solid #dddfe2;
+        line-height: 16px;
+        vertical-align: middle;
+
+        ::placeholder {
+            color: yellow;
+        }
+    }
+
+    &_button {
+        width: 100%;
+        background-color: #1877f2;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 48px;
+        padding: 0 16px;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    &_links-container {
+        font-size: 14px;
+        font-weight: 500;
+        color: #1877f2;
+        display: flex;
+        justify-content: center;
+        padding: 12px 0 25px;
+
+        a {
+            cursor: pointer;
+        }
+    }
+}

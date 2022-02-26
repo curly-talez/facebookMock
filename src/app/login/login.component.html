@@ -1,0 +1,26 @@
+<div class="login_container">
+    <!-- facebook heading -->
+    <img src="../../assets/login_facebook.svg" alt="login_facebook" class="login_facebook-image">
+    <!-- form -->
+    <form [formGroup]=loginForm (ngSubmit)="facebookLogin()" class="login_form">
+        <div class="login_form-title">Log into facebook</div>
+        <div class="login_input-container">
+            <input type="email" name="email" placeholder="Email address or phone number" formControlName="login_email"
+                class="login_input">
+        </div>
+
+        <div class="login_input-container">
+            <input type="password" name="password" placeholder="Password" formControlName="login_password"
+                class="login_input">
+        </div>
+
+        <div class="login_input-container">
+            <button type="submit" class="login_button">Log in</button>
+        </div>
+
+        <div class="login_input-container login_links-container">
+            <a>Forgotten account?</a> &nbsp;
+            <a>Sign up for facebook</a>
+        </div>
+    </form>
+</div>
